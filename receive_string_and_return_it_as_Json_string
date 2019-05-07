@@ -1,0 +1,14 @@
+def csvToJson(input:String)={
+var str=input
+var inp=str.split(",")
+var name=if(inp(0).length==0) "" else inp(0)
+var cpname=inp(1)
+var tech=inp(2)
+print(s"{\n Name:$name,\n Company_Name:$cpname,\n Technology:$tech \n}")
+}
+
+
+var inp="raju,bluepi,bigdata"
+
+
+csvToJson(inp)
