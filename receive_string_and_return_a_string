@@ -1,0 +1,19 @@
+def convert(input:String)=
+{
+var x:String=input
+var str = ""
+val temp = (x.length)%2
+val len = x.length-1
+for(i<-0 to (((len+1)/2)-1))
+{
+str = str+x(i).toString+x(len-i).toString
+}
+if((x.length)%2 == 1)
+str = str+x(x.length/2)
+str
+}
+
+input:
+----------------------------
+convert("123456")
+convert("12345")
